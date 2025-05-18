@@ -25,7 +25,8 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m pytest discover -s . -p "test_calculator.py"
+          python -m pytest -s test_calculator.py
+
 
   deploy:
     needs: test
